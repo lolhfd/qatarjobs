@@ -12,6 +12,14 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: "Company Name", name: "title", widget: "string"}
-      - {label: "Interview Image", name: "image", widget: "image"}
-      - {label: "Description", name: "body", widget: "text"}
+      - label: "Company Name"
+        name: "title"
+        widget: "string"
+
+      - label: "Interview Image"
+        name: "image"
+        widget: "image"
+
+      - label: "Description"
+        name: "body"
+        widget: "text"
