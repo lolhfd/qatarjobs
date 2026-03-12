@@ -1,0 +1,17 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "interviews"
+    label: "Interviews"
+    folder: "interviews"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Company Name", name: "title", widget: "string"}
+      - {label: "Interview Image", name: "image", widget: "image"}
+      - {label: "Description", name: "body", widget: "text"}
